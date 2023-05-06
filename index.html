@@ -18,7 +18,19 @@
 	
 	<style>
 		
+		.logo{
+			height:400px;
+		}
 		
+		.container{
+			display:flex;
+		}
+		
+		.block{
+			display:flex;
+			justify-content:center;
+			items-align:center;
+		}
 
 	</style>
 
@@ -27,11 +39,15 @@
 
 <body>
 	<header>
-		<img src="logo-wilcza-wola.svg">
+		<img class="logo" src="logo-wilcza-wola.svg">
 	</header>
 
 	<div class="container">
-		
+		<div class="block" style="background-image:url('wilcza-wola.jpg');">Wilcza Wola</div>
+		<div class="block" style="background-image:url('turystyka.jpg');">Turystyka</div>
+		<div class="block" style="background-image:url('wilcza-wola.jpg');"></div>
+		<div class="block"></div>
+		<div class="block"></div>
 	</div>
 
 <div id="container">
