@@ -11,25 +11,92 @@
 	<link rel="stylesheet" href="index.css" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	
 	<script src="jquery-3.6.0.min.js"></script> 	
 	
 	
 	<style>
+		html,
+		body {
+			text-size-adjust: none;
+			-webkit-text-size-adjust: none;
+			-moz-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+		}
+
+		html {
+			scroll-behavior: smooth;
+			font-size: 14px;
+		}
+
+		body {
+			background-color: #fff;
+			color: black;
+			font-family: 'Barlow Semi Condensed', sans-serif;
+			padding: 0px;
+			margin: 0;
+			word-break: break-word;
+		}
+		
+		h1,h2{
+			font-size:40px;
+			font-weight:600;
+		}
+		
+		header{
+			text-align:center;
+		}
 		
 		.logo{
-			height:400px;
+			height:160px;
+			margin:20px auto 0 auto;
 		}
+		
+		.rama-gora>img{
+			position:absolute;
+			width:100%;
+			z-index: 100;
+		}
+		
 		
 		.container{
 			display:flex;
+			width:100%;
+			background-color:#fff;
 		}
 		
 		.block{
 			display:flex;
 			justify-content:center;
-			items-align:center;
+			align-items: center;
+			width:calc(100% / 3);
+			height:calc(100vh - 180px - 20px - 20px);
+			font-size:25px;
+			color:white;
+			background-size:cover;
+			text-decoration:none;
+		}
+		
+		.block:hover{
+			opacity:90%;
+			background-size:cover;
+			transition:0.3s all ease-in-out;
+		}
+		
+		.rama-dol{
+			transform: rotate(180deg);
+			z-index: 100;
+			width: 100%;
+			bottom:0;
+		}
+		
+		footer{
+			font-size:14px;
+			text-align:center;
+			margin:-5px auto 20px;
+			position:relative;
+			z-index:150;
 		}
 
 	</style>
@@ -39,19 +106,30 @@
 
 <body>
 	<header>
-		<img class="logo" src="logo-wilcza-wola.svg">
+		<a href="https://wilczawola.pl"><img class="logo" src="logo-wilcza-wola.svg"></a>
 	</header>
+	
+	
 
-	<div class="container">
-		<div class="block" style="background-image:url('wilcza-wola.jpg');">Wilcza Wola</div>
-		<div class="block" style="background-image:url('turystyka.jpg');">Turystyka</div>
-		<div class="block" style="background-image:url('wilcza-wola.jpg');">Jezioro Maziarnia</div>
-		<div class="block"></div>
-		<div class="block"></div>
+	<div class="rama-gora"><img src="ramka-gora.svg"></div>
+	<div class="container" >
+		<a class="block" href="miejscowosc-wilcza-wola.html" style="background-image:url('wilcza-wola.jpg');background-position: right;"><h1>Wilcza Wola</h1></a>
+		<a class="block" href="turystyka.html" style="background-image:url('turystyka.jpg');"><h2>Turystyka</h2></a>
+		<a class="block" href="jezioro-maziarnia.html" style="background-image:url('wilcza-wola.jpg');"><h2>Jezioro Maziarnia</h2></a>
 	</div>
+	
+	
+	<div class="rama-gora rama-dol"><img src="ramka-gora.svg"></div>
+	
+	
+	
+	
+	
+	
+	<footer>
+		Wilcza Wola &copy 2023 Wszystkie prawa zastrzeżone - wilczawola.pl
+	</footer>
 
-<div id="container">
-<h1>Wilcza Wola</h1>
 
 </body>
 </html>
