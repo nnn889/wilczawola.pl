@@ -157,6 +157,8 @@ footer{
 	margin:100px auto 20px auto;
 	position:relative;
 	z-index:150;
+	padding:0 10px;
+	box-sizing:border-box;
 	
 }
 @media(max-width:768px){
