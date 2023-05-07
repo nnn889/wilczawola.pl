@@ -19,27 +19,6 @@
 	
 	
 	<style>
-		html,
-		body {
-			text-size-adjust: none;
-			-webkit-text-size-adjust: none;
-			-moz-text-size-adjust: none;
-			-ms-text-size-adjust: none;
-		}
-
-		html {
-			scroll-behavior: smooth;
-			font-size: 16px;
-		}
-
-		body {
-			background-color: #fff;
-			color: black;
-			font-family: 'Poppins', sans-serif;
-			padding: 0px;
-			margin: 0;
-			word-break: break-word;
-		}
 		
 		h1{
 			font-size:45px;
@@ -49,31 +28,6 @@
 		h2{
 			font-size:30px;
 			font-weight:600;
-		}
-		
-		a{
-			text-decoration:none;
-			color:#000;
-		}
-		
-		header{
-			text-align:center;
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			gap:0 30px;
-			font-size:17px;
-			
-		}
-		
-		.menu-link:hover{
-			opacity:50%;
-			transition:0.3s;
-		}
-		
-		.logo{
-			height:160px;
-			margin:20px auto 0 auto;
 		}
 		
 		.rama-gora>img{
@@ -155,9 +109,29 @@
 		<a class="menu-link" href="gmina-dzikowiec.html">Gmina</a>
 		<a class="menu-link" href="wilcza-wola-wedkarstwo.html">Wędkarstwo</a>
 		<a class="menu-link" href="kontakt.html">Kontakt</a>
+		
+		<div class="hamburger">☰</div>
+		<div class="mobile-links">
+			<a class="mobile-menu-link" href="miejscowosc-wilcza-wola.html">Wilcza Wola</a>
+			<a class="mobile-menu-link" href="atrakcje-okolic.html">Atrakcje okolic</a>
+			<a class="mobile-menu-link" href="wilcza-wola-zalew.html">Zalew</a>
+			<a class="mobile-menu-link" href="gmina-dzikowiec.html">Gmina</a>
+			<a class="mobile-menu-link" href="wilcza-wola-wedkarstwo.html">Wędkarstwo</a>
+			<a class="mobile-menu-link" href="kontakt.html">Kontakt</a>
+		</div>
 	</header>
 	
+	<script>
+		function showMenu(){
+			if(document.querySelector(".mobile-links").style.display == "flex"){
+				document.querySelector(".mobile-links").style.display = "none";
+			} else {
+				document.querySelector(".mobile-links").style.display = "flex";
+			}
+		}
 	
+		document.querySelector(".hamburger").onclick = showMenu;
+	</script>
 
 	<div class="rama-gora"><img src="ramka-gora.svg"></div>
 	<div class="container" >
