@@ -1,2 +1,5 @@
 
-[Rzeszów Podkarpackie](https://rzeszowpodkarpackie.com)
+Inne projekty:
+
+https://rzeszowpodkarpackie.com
+
